@@ -1,0 +1,87 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.status-container {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f8fbff;
+}
+
+.status-container h1 {
+  color: #1e3c72;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.status-container p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+  background: #1e3c72;
+  color: white;
+}
+
+th,
+td {
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+tbody tr:hover {
+  background: #f7faff;
+}
+
+select {
+  padding: 10px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #1e3c72;
+}
+
+@media (max-width: 768px) {
+  .status-container {
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 700px;
+  }
+}
+/* Center Title */
+
+.status-container h1,
+.status-container p {
+  text-align: center;
+}

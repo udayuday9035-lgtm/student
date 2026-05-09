@@ -1,0 +1,115 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Georgia, serif;
+  background: #f4f7fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.certificate-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef3ff;
+  padding: 30px;
+}
+
+.certificate-box {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border: 8px solid #1e3c72;
+  padding: 60px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-box h1 {
+  font-size: 42px;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.certificate-box h2 {
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.certificate-box h3 {
+  font-size: 28px;
+  color: #1e3c72;
+  margin: 20px 0;
+}
+
+.certificate-box p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.signature-section div {
+  width: 40%;
+  text-align: center;
+}
+
+.signature-section p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.signature-section hr {
+  border: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .certificate-box {
+    padding: 35px 20px;
+  }
+
+  .certificate-box h1 {
+    font-size: 30px;
+  }
+
+  .certificate-box h2 {
+    font-size: 28px;
+  }
+
+  .certificate-box h3 {
+    font-size: 22px;
+  }
+
+  .certificate-box p {
+    font-size: 16px;
+  }
+
+  .signature-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signature-section div {
+    width: 80%;
+  }
+}
